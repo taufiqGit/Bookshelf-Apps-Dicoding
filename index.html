@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Bookshelf Apps</header>
+        <main>
+            <form id="form-book" action="#">
+                <div class="form-group">
+                    <label for="input-judul">Judul</label>
+                    <input class="input-item" type="text" name="judul" placeholder="" id="input-judul" required/>
+                </div>
+                <div class="form-group">
+                    <label for="input-penulis">Penulis</label>
+                    <input class="input-item" type="text" name="penulis" placeholder="" id="input-penulis" required/>
+                </div>
+                <div class="form-group">
+                    <label for="input-tahun">Tahun</label>
+                    <input class="input-item" type="number" name="tahun" min="0" placeholder="" id="input-tahun" required/>
+                </div>
+                <div class="form-group form-group-checkbox">
+                    <label for="input-baca">Sudah Dibaca</label>
+                    <input class="input-checkbox" type="checkbox" name="baca" id="input-baca"/>
+                </div>
+                <!-- <input type="submit" value="Submit" name="Submit" class="btn-submit"> -->
+                <button class="btn-submit" type="submit" name="Submit">Tamabahkan ke rak buku</button>
+            </form>
+
+            <section class="wrap-form-search">
+                <h2>Cari By Judul</h2>
+                <div class="form-search">
+                    <input type="text" id="input-search"/>
+                    <button id="btn-search">Search</button>                    
+                </div>
+            </section>
+
+            <section class="booklist">
+                <h2>Buku Belum Dibaca</h2>
+                <div id="unread-book">
+
+                </div>
+            </section>
+
+            <section class="booklist">
+                <h2>Buku Sudah Dibaca</h2>
+                <div id="finished-read-book">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
